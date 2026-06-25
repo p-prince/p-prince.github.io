@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prince Odion</title>
+  <meta name="description" content="Prince Odion — Research Associate at PXLD & Dock10 Studios. Neural rendering, video harmonisation, generative models for visual effects." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+      padding: 30px 20px;
+    }
+
+    a { color: #1772d0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page { max-width: 800px; margin: 0 auto; }
+
+    /* ── Header ── */
+    .header {
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+      margin-bottom: 2.5rem;
+    }
+
+    .header-text { flex: 1; }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 2rem;
+      font-weight: normal;
+      margin-bottom: 0.75rem;
+    }
+
+    .bio { margin-bottom: 0.75rem; font-size: 0.97rem; }
+
+    .links { font-size: 0.95rem; }
+    .links a { margin-right: 0.3rem; }
+    .links span { color: #aaa; margin-right: 0.3rem; }
+
+    .header-photo img {
+      width: 200px;
+      border-radius: 50%;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    /* ── Section headings ── */
+    h2 {
+      font-size: 1.05rem;
+      font-weight: bold;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      margin: 2rem 0 1rem;
+    }
+
+    /* ── News ── */
+    .news { list-style: none; }
+    .news li {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0.4rem;
+      font-size: 0.93rem;
+    }
+    .news-date {
+      flex-shrink: 0;
+      width: 70px;
+      color: #888;
+      font-size: 0.88rem;
+      padding-top: 1px;
+    }
+
+    /* ── Publications ── */
+    .pub {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.75rem;
+      align-items: flex-start;
+    }
+    .pub-thumb { flex-shrink: 0; }
+    .pub-thumb img {
+      width: 160px;
+      border-radius: 4px;
+      display: block;
+    }
+    .pub-title {
+      font-weight: bold;
+      font-size: 0.97rem;
+      margin-bottom: 0.2rem;
+    }
+    .pub-authors {
+      font-size: 0.88rem;
+      color: #555;
+      margin-bottom: 0.25rem;
+    }
+    .pub-venue {
+      display: inline-block;
+      background: #3d9970;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-bottom: 0.35rem;
+    }
+    .pub-links { font-size: 0.88rem; }
+    .pub-links a { margin-right: 0.6rem; }
+    .pub-abstract {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.4rem;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      margin-top: 3rem;
+      border-top: 1px solid #eee;
+      padding-top: 1rem;
+      font-size: 0.82rem;
+      color: #aaa;
+      text-align: center;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 580px) {
+      .header { flex-direction: column-reverse; align-items: center; gap: 1.5rem; }
+      .header-photo img { width: 150px; }
+      .pub { flex-direction: column; }
+      .pub-thumb img { width: 100%; max-width: 300px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-text">
+      <h1>Prince Odion</h1>
+      <p class="bio">
+        I am a Research Associate at PXLD &amp; Dock10 Studios
+        (University of York Spin-out), working on neural relighting and compositing
+        for realistic video synthesis. I completed my MSc in Artificial Intelligence
+        with Distinction at the University of York, where I was awarded the
+        Departmental Prize for the highest-performing student and the highest
+        thesis mark in the cohort.
+      </p>
+      <div class="links">
+        <a href="mailto:odionprince@gmail.com">Email</a>
+        <span>/</span>
+        <a href="https://linkedin.com/in/p-odion">LinkedIn</a>
+        <span>/</span>
+        <a href="https://github.com/p-prince">GitHub</a>
+        <span>/</span>
+        <a href="Academic_CV.pdf">CV</a>
+      </div>
+    </div>
+    <div class="header-photo">
+      <img src="images/profile.png" alt="Prince Odion" />
+    </div>
+  </div>
+
+  <!-- News -->
+  <h2>News</h2>
+  <ul class="news">
+    <li>
+      <span class="news-date">Jan 2026</span>
+      <span>Started as Research Associate at PXLD &amp; Dock10 Studios, University of York Spin-out.</span>
+    </li>
+    <li>
+      <span class="news-date">2025</span>
+      <span>Awarded the Departmental Prize for Highest Performing Student in MSc AI 2024/25 and the highest thesis mark in the cohort.</span>
+    </li>
+  </ul>
+
+  <!-- Publications -->
+  <h2>Publications</h2>
+  <div class="pub">
+    <div class="pub-thumb">
+      <a href="#">
+        <img src="images/clean2green_thumb.png" alt="clean2green2clean teaser" />
+      </a>
+    </div>
+    <div>
+      <div class="pub-title">
+        clean2green2clean: Synthesising Bad Composites to Learn Actor-Background Video Harmonisation
+      </div>
+      <div class="pub-authors">
+        Prince <strong>Odion</strong>, William A. P. Smith, James Gardner, Florian Block
+      </div>
+      <div><span class="pub-venue">ECCV 2026</span></div>
+      <div class="pub-links">
+        <a href="#">[Project Page]</a>
+        <a href="#">[Paper]</a>
+      </div>
+      <p class="pub-abstract">
+        We synthesise badly-composited green-screen footage to train a video diffusion model
+        that relights actors, synthesises cast shadows, and adds specular reflections —
+        without explicit lighting estimation or foreground masks.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Design inspired by <a href="https://jonbarron.info">Jon Barron's website</a>.
+  </div>
+
+</div>
+</body>
+</html>
