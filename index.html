@@ -53,12 +53,14 @@
       border-radius: 50%;
       overflow: hidden;
       flex-shrink: 0;
+      position: relative;
     }
 
     .header-photo img {
+      position: absolute;
       width: 85%;
-      display: block;
-      margin: -35% auto 0;
+      left: 7.5%;
+      top: -35%;
     }
 
     /* ── Section headings ── */
@@ -143,6 +145,7 @@
     @media (max-width: 580px) {
       .header { flex-direction: column-reverse; align-items: center; gap: 1.5rem; }
       .header-photo { width: 150px; height: 150px; }
+      .header-photo img { top: -35%; }
       .pub { flex-direction: column; }
       .pub-thumb img { width: 100%; max-width: 300px; }
     }
