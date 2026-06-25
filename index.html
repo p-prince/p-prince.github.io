@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Prince Odion</title>
   <meta name="description" content="Prince Odion — Research Associate at PXLD & Dock10 Studios. Neural rendering, video harmonisation, generative models for visual effects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: system-ui, -apple-system, sans-serif;
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 16px;
       line-height: 1.6;
       color: #333;
@@ -33,9 +35,9 @@
     .header-text { flex: 1; }
 
     h1 {
-      font-family: Georgia, serif;
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 2rem;
-      font-weight: normal;
+      font-weight: 300;
       margin-bottom: 0.75rem;
     }
 
@@ -47,7 +49,10 @@
 
     .header-photo img {
       width: 200px;
+      height: 200px;
       border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
       display: block;
       flex-shrink: 0;
     }
@@ -133,7 +138,7 @@
     /* ── Mobile ── */
     @media (max-width: 580px) {
       .header { flex-direction: column-reverse; align-items: center; gap: 1.5rem; }
-      .header-photo img { width: 150px; }
+      .header-photo img { width: 150px; height: 150px; }
       .pub { flex-direction: column; }
       .pub-thumb img { width: 100%; max-width: 300px; }
     }
@@ -172,6 +177,10 @@
   <!-- News -->
   <h2>News</h2>
   <ul class="news">
+    <li>
+      <span class="news-date">Jun 2026</span>
+      <span>Paper <em>clean2green2clean</em> accepted to <strong>ECCV 2026</strong>.</span>
+    </li>
     <li>
       <span class="news-date">Jan 2026</span>
       <span>Started as Research Associate at PXLD &amp; Dock10 Studios, University of York Spin-out.</span>
