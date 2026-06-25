@@ -47,20 +47,13 @@
     .links a { margin-right: 0.3rem; }
     .links span { color: #aaa; margin-right: 0.3rem; }
 
-    .header-photo {
+    .header-photo img {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      overflow: hidden;
+      object-fit: cover;
+      display: block;
       flex-shrink: 0;
-      position: relative;
-    }
-
-    .header-photo img {
-      position: absolute;
-      width: 85%;
-      left: 7.5%;
-      top: -35%;
     }
 
     /* ── Section headings ── */
@@ -144,8 +137,7 @@
     /* ── Mobile ── */
     @media (max-width: 580px) {
       .header { flex-direction: column-reverse; align-items: center; gap: 1.5rem; }
-      .header-photo { width: 150px; height: 150px; }
-      .header-photo img { top: -35%; }
+      .header-photo img { width: 150px; height: 150px; }
       .pub { flex-direction: column; }
       .pub-thumb img { width: 100%; max-width: 300px; }
     }
