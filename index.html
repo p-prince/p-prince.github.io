@@ -118,6 +118,26 @@
       border-radius: 3px;
       margin-bottom: 0.35rem;
     }
+    .pub-venue.withdrawn {
+      background: #8a8a8a;
+    }
+    .pub-status {
+      display: inline-block;
+      border: 1px solid #c9822b;
+      color: #b5701f;
+      background: #fff7ec;
+      font-size: 0.72rem;
+      font-weight: bold;
+      padding: 1px 7px;
+      border-radius: 3px;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+    .pub-note {
+      font-size: 0.85rem;
+      color: #b5701f;
+      margin-top: 0.4rem;
+    }
     .pub-links { font-size: 0.88rem; }
     .pub-links a { margin-right: 0.6rem; }
     .pub-abstract {
@@ -153,8 +173,11 @@
     <div class="header-text">
       <h1>Prince Odion</h1>
       <p class="bio">
-        I am a Research Associate at PXLD, working on neural relighting and compositing
-        for realistic video synthesis. I completed my MSc in Artificial Intelligence
+        I am a Research Associate at PXLD, where my research investigates how generative
+        video models can learn the physics of light and materials, and use that understanding
+        to relight and composite video realistically. More broadly, I am interested in
+        building generative models that reason about the physical world rather than only
+        reproducing its appearance. I completed my MSc in Artificial Intelligence
         with Distinction at the University of York, where I was supervised by
         <a href="https://www-users.york.ac.uk/~waps101/">Prof. William Smith</a>
         and awarded the Departmental Prize for the highest-performing student in the cohort.
@@ -177,7 +200,7 @@
   <ul class="news">
     <li>
       <span class="news-date">Jun 2026</span>
-      <span>Paper <em>clean2green2clean</em> accepted to <strong>ECCV 2026</strong>.</span>
+      <span>Paper <em>clean2green2clean</em> accepted to <strong>ECCV 2026</strong>, later withdrawn to pursue a patent on the technology.</span>
     </li>
     <li>
       <span class="news-date">Jan 2026</span>
@@ -193,9 +216,7 @@
   <h2>Publications</h2>
   <div class="pub">
     <div class="pub-thumb">
-      <a href="https://p-prince.github.io/clean2green/">
-        <img src="images/clean2green_thumb.png" alt="clean2green2clean teaser" />
-      </a>
+      <img src="images/clean2green_thumb.png" alt="clean2green2clean teaser" />
     </div>
     <div>
       <div class="pub-title">
@@ -204,15 +225,18 @@
       <div class="pub-authors">
         <strong>Prince Odion</strong>, James Gardner, William A. P. Smith, Florian Block
       </div>
-      <div><span class="pub-venue">ECCV 2026</span></div>
-      <div class="pub-links">
-        <a href="https://p-prince.github.io/clean2green/">[Project Page]</a>
-        <a href="#">[Paper]</a>
+      <div>
+        <span class="pub-venue">ECCV 2026</span>
       </div>
       <p class="pub-abstract">
         We synthesise badly-composited green-screen footage to train a video diffusion model
-        that relights actors, synthesises cast shadows, and adds specular reflections —
+        that relights actors, synthesises cast shadows, and adds specular reflections
         without explicit lighting estimation or foreground masks.
+      </p>
+      <p class="pub-note">
+        Accepted to ECCV 2026, then withdrawn from the proceedings because the underlying
+        method is being filed for a patent. The paper and project page are not publicly
+        available while the application is pending.
       </p>
     </div>
   </div>
